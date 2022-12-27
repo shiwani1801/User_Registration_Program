@@ -46,10 +46,13 @@ public class UserRegistrationMain
             UserRegistration obj5 = new UserRegistration();
             obj5.isValidPassword(password);
             /**UC6
-             * Check password contains atleast upper case or not
+             * Check password contains atleast 1 upper case or not
              */
             obj5.checkUpperCase(password);
-
+            /**UC7
+             * Check password has atleast one numeric number
+             */
+            obj5.checkNumericNumber(password);
 
         }
     }
