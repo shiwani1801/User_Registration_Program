@@ -36,5 +36,20 @@ public void checkLastName(String name)
         System.out.println("It is not a valid name");
     }
 }
+    /**
+     * Method to check given email is valid or not
+     */
+    public void isValidEmail(String email)
+    {
+        boolean isMatched = Pattern.compile("^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([.][a-zA-Z]{2,4})([.][a-zA-Z]{2})*$").matcher(email).matches();
+        if(isMatched)
+        {
+            System.out.println("It is valid email");
+        }
+        else
+        {
+            System.out.println("invalid email");
+        }
+    }
 
 }
