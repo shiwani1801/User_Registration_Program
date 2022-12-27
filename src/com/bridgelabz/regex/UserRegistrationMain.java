@@ -31,5 +31,12 @@ public class UserRegistrationMain
             String email = scanner.next();
             UserRegistration obj3 = new UserRegistration();
             obj3.isValidEmail(email);
+            /**UC4
+             * Check mobile number is valid or not
+             */
+            System.out.println("Enter your mobile number: ");
+            String mobileNumber = scanner.nextLine();
+            UserRegistration obj4 = new UserRegistration();
+            obj4.isValidMobileNumber(mobileNumber);
         }
     }

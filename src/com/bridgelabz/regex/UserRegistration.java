@@ -51,5 +51,20 @@ public void checkLastName(String name)
             System.out.println("invalid email");
         }
     }
+    /**
+     * Method to check given mobile no. is valid or not
+     */
+    public void isValidMobileNumber(String name)
+    {
+        boolean isMatched = Pattern.compile("^[0-9]{2}[ ][0-9]{10}$").matcher(name).matches();
+        if(isMatched)
+        {
+            System.out.println("It is valid mobile number");
+        }
+        else
+        {
+            System.out.println("It is not a valid mobile number");
+        }
+    }
 
 }
