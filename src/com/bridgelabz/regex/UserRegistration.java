@@ -66,5 +66,20 @@ public void checkLastName(String name)
             System.out.println("It is not a valid mobile number");
         }
     }
+    /**
+     * Method to check given password has minimum 8 characters
+     */
+    public void isValidPassword(String name)
+    {
+        boolean isMatched = Pattern.compile("[0-9a-zA-Z@!+_.-]{8,}").matcher(name).matches();
+        if(isMatched)
+        {
+            System.out.println("It is valid password");
+        }
+        else
+        {
+            System.out.println("It is not a valid password");
+        }
+    }
 
 }
