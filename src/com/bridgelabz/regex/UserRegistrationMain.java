@@ -45,6 +45,11 @@ public class UserRegistrationMain
             String password = scanner.next();
             UserRegistration obj5 = new UserRegistration();
             obj5.isValidPassword(password);
+            /**UC6
+             * Check password contains atleast upper case or not
+             */
+            obj5.checkUpperCase(password);
+
 
         }
     }

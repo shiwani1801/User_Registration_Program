@@ -81,5 +81,20 @@ public void checkLastName(String name)
             System.out.println("It is not a valid password");
         }
     }
+    /**
+     * Method to ensure password have atleast one uppercase letter
+     */
+    public void checkUpperCase(String name)
+    {
+        boolean isMatched = Pattern.compile("(?=.*[A-Z])[0-9a-zA-Z@!+_.]{8,}").matcher(name).matches();
+        if(isMatched)
+        {
+            System.out.println("Valid ! It contains uppercase letter");
+        }
+        else
+        {
+            System.out.println("Enter atleast one uppercase letter");
+        }
+    }
 
 }
